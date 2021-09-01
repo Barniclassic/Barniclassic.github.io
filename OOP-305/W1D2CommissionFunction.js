@@ -1,19 +1,19 @@
 let sales, commission = 0, test;
-function computeSalesCommission(test, sales){
-    if (test === true){
-        if (sales > 500 ){
-            commission = (sales-500) * 2/100 + 5;
-        }else if (sales >= 300 && sales <= 500){
-            commission = sales * 1/100
-        } 
-    }else if (test === false){
-        if (sales > 500 ){
-            commission = ((sales-500) * 3/100) + 10;
-        }else if (sales >= 300 && sales <= 500){
-            commission = sales * 2/100
+function computeSalesCommission(test, sales) {
+    if (test === true) {
+        if (sales > 500) {
+            commission = (sales - 500) * 2 / 100 + 5;
+        } else if (sales >= 300 && sales <= 500) {
+            commission = sales * 1 / 100
+        }
+    } else if (test === false) {
+        if (sales > 500) {
+            commission = ((sales - 500) * 3 / 100) + 10;
+        } else if (sales >= 300 && sales <= 500) {
+            commission = sales * 2 / 100
         }
     }
-        return commission;
+    return commission;
 }
 computeSalesCommission(test, sales)
 console.log("expect 0: ", computeSalesCommission(true, 200));

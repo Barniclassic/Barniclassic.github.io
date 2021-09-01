@@ -1,6 +1,14 @@
+/* DEFINING TABLE
+inputs: initial deposiit, annual interest rate, years 
+outputs: total amount
+process: 
+- converting the inputs to numbers
+- get the formula for coompund interest
+- get the monthly interest rate by dividing annual interest rate by 12 months
+- months of interest will be number of years * 12
+*/
 const MONTHLY = 12;
 let amount, initial, interest, years;
-
 function compoundInterest(initial, interest, years) {
     amount = initial * (1 + ((interest / 100) / MONTHLY)) ** (years * MONTHLY);
     return amount;

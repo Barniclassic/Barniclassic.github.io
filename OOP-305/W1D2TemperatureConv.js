@@ -1,6 +1,6 @@
 let tempInCelsius, tempInFahrenheit;
 function convertFahrenheit(tempInFahrenheit) {
-    tempInCelsius = (parseFloat(tempInFahrenheit - 32) * (5/9))
+    tempInCelsius = (parseFloat(tempInFahrenheit - 32) * (5 / 9))
     return tempInCelsius;
 }
 convertFahrenheit(tempInFahrenheit)
