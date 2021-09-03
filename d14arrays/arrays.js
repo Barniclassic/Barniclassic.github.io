@@ -2,7 +2,7 @@
 
 /* You need the module.exports when testing in node.  Comment it out when you send your file to the browser
 */
-module.exports = { maxOfThree, sum, multiply, findLongestWord, reverseArrayInPlace, reverseArray,scoreExams, generateArray }; 
+// module.exports = { maxOfThree, sum, multiply, findLongestWord, reverseArrayInPlace, reverseArray,scoreExams, generateArray }; 
 //add all of your function names here that you need for the node mocha tests
 
 /**
