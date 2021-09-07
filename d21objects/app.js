@@ -37,7 +37,7 @@ function findTitles() {
     let titles = [];
     // titles = ["Mockingjay: The Final Book of The Hunger Games", "The Road Ahead", "Walter Isaacson"];  //FIX THIS!!
     for (let i = 0; i < library.length; i++) {
-        titles[i] = library[i].title;
+        titles[i] = library[i].title.toLocaleUpperCase;
     }
     titles.sort();
     return titles;
@@ -48,14 +48,23 @@ function findTitles() {
  * Event handler for Add book button.  Creates and adds book to the library
  */
 
-function addBook(title, author, libraryID) {
+function addBook(title, author, ID ) {
        const newBook = {
-            title: document.getElementById("title").value,
-            author: document.getElementById("author").value,
-            libraryID: document.getElementById("id").value
+            title: title,
+            author: author,
+            libraryID: ID
         };
         library.push(newBook);
         return newBook;
+}
+function addBookHtml() {
+    const newBook = {
+         title: document.getElementById("title").value,
+         author: document.getElementById("author").value,
+         libraryID: document.getElementById("id").value
+     };
+     library.push(newBook);
+     return newBook;
 }
 /**
  * @returns {undefined} no return
