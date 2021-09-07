@@ -2,7 +2,7 @@
 /* eslint-disable require-jsdoc */
 "use strict";
 /* You need the module.exports when testing in node.  Comment it out when you send your file to the browser */
-module.exports = { findTitles, addBook, findAuthors, findIDs }; //add all of your function names here that you need for the node mocha tests
+// module.exports = { showTitles, findTitles, addBook, findAuthors, findIDs }; //add all of your function names here that you need for the node mocha tests
 
 
 let library = [
@@ -25,7 +25,7 @@ function showTitles() {
     titles.sort();
     const titleString = titles.join("\n");
 
-    let textArea = document.getElementById("displayArea");
+    let textArea = document.getElementById("displayArea").innerHTML;
     textArea.innerHTML = titleString;
 }
 
@@ -48,16 +48,32 @@ function findTitles() {
  * Event handler for Add book button.  Creates and adds book to the library
  */
 
-function addBook(bookTitle, bookAuthor, bookLilbraryID) {
+function addBook() {
         const newBook = {
-            title: bookTitle,
-            author: bookAuthor,
-            libraryID: bookLilbraryID
+            title: document.getElementById("title").value,
+            author: document.getElementById("author").value,
+            libraryID: document.getElementById("id").value
         }
         library.push(newBook);
-        // const title = document.getElementById("title"); //retrieves the book title from the title textbox
-        //finish the implementation -- get the author, create a book object, and add to the library array
         return newBook;
+}
+/**
+ * @returns {undefined} no return
+ */
+
+function showAuthor() {
+
+    /* put all titles into an array, then sort, then join with newline and insert in textarea innerHTML */
+
+    const authors = findAuthors();
+    authors.sort();
+    /*need to sort and then join the titles still (e.g., someArray.join("\n")  */
+ 
+    const authorsString = authors.join("\n");
+
+    let textArea = document.getElementById("displayArea");
+    textArea.innerHTML = authorsString;
+
 }
 function findAuthors() {
     const author = [];
@@ -68,7 +84,26 @@ function findAuthors() {
     author.sort();
     return author;
 }
+/**
+ * @returns{undefined}
+ */
+ function showID() {
 
+    /* put all titles into an array, then sort, then join with newline and insert in textarea innerHTML */
+
+    const Ids = findIDs();
+
+    /*need to sort and then join the titles still (e.g., someArray.join("\n")  */
+    Ids.sort();
+    const titleString = Ids.join("\n");
+
+    let textArea = document.getElementById("displayArea");
+    textArea.innerHTML = titleString;
+
+}
+/**
+ * @returns{undefined}
+ */
 function findIDs() {
     const ids = [];
     for (let i = 0; i < library.length; i++) {
@@ -78,4 +113,10 @@ function findIDs() {
         return a - b;
     });
     return ids;
+}
+/**
+ * @returns{undefined}
+ */
+function scramble(){
+    
 }
