@@ -118,11 +118,9 @@ function findIDs() {
 * @return {object} array holding all titles as elements
 */
 function scramble() {
-   const titles = findTitles();
-   const titleWord = titles.toString().split(" ");
-   const sortedTitle = titleWord.sort((aaa, bbb) => aaa.length - bbb.length);
-   console.log(sortedTitle);
-   const titleString = titles.join("\n");
-   let textArea = document.getElementById("displayArea");
-   textArea.innerHTML = titleString;
+//    const titles = findTitles();
+//    const titleWord = titles.toString().split(" ");
+//    const titleString = titles.join("\n");
+//    let textArea = document.getElementById("displayArea");
+//    textArea.innerHTML = titleString;
 }
