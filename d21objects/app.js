@@ -25,7 +25,7 @@ function showTitles() {
     titles.sort();
     const titleString = titles.join("\n");
 
-    let textArea = document.getElementById("displayArea").innerHTML;
+    let textArea = document.getElementById("displayArea");
     textArea.innerHTML = console.log(titleString);
 }
 
@@ -37,7 +37,7 @@ function findTitles() {
     let titles = [];
     // titles = ["Mockingjay: The Final Book of The Hunger Games", "The Road Ahead", "Walter Isaacson"];  //FIX THIS!!
     for (let i = 0; i < library.length; i++) {
-        titles[i] = library[i].title.toLocaleUpperCase;
+        titles[i] = library[i].title.toUpperCase();
     }
     titles.sort();
     return titles;
