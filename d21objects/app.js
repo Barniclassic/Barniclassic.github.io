@@ -2,7 +2,7 @@
 /* eslint-disable require-jsdoc */
 "use strict";
 /* You need the module.exports when testing in node.  Comment it out when you send your file to the browser */
-// module.exports = { showTitles, findTitles, addBook, findAuthors, findIDs }; //add all of your function names here that you need for the node mocha tests
+module.exports = { showTitles, findTitles, addBook, findAuthors, findIDs }; //add all of your function names here that you need for the node mocha tests
 
 
 let library = [
@@ -26,7 +26,7 @@ function showTitles() {
     const titleString = titles.join("\n");
 
     let textArea = document.getElementById("displayArea").innerHTML;
-    textArea.innerHTML = titleString;
+    textArea.innerHTML = console.log(titleString);
 }
 
 /**
@@ -35,7 +35,7 @@ function showTitles() {
  */
 function findTitles() {
     let titles = [];
-    titles = ["Mockingjay: The Final Book of The Hunger Games", "The Road Ahead", "Walter Isaacson"];  //FIX THIS!!
+    // titles = ["Mockingjay: The Final Book of The Hunger Games", "The Road Ahead", "Walter Isaacson"];  //FIX THIS!!
     for (let i = 0; i < library.length; i++) {
         titles[i] = library[i].title;
     }
@@ -48,12 +48,12 @@ function findTitles() {
  * Event handler for Add book button.  Creates and adds book to the library
  */
 
-function addBook() {
-        const newBook = {
+function addBook(title, author, libraryID) {
+       const newBook = {
             title: document.getElementById("title").value,
             author: document.getElementById("author").value,
             libraryID: document.getElementById("id").value
-        }
+        };
         library.push(newBook);
         return newBook;
 }
@@ -114,9 +114,15 @@ function findIDs() {
     });
     return ids;
 }
-/**
- * @returns{undefined}
- */
-function scramble(){
-    
+/** 
+* @return {object} array holding all titles as elements
+*/
+function scramble() {
+   const titles = findTitles();
+   const titleWord = titles.toString().split(" ");
+   const sortedTitle = titleWord.sort((aaa, bbb) => aaa.length - bbb.length);
+   console.log(sortedTitle);
+   const titleString = titles.join("\n");
+   let textArea = document.getElementById("displayArea");
+   textArea.innerHTML = titleString;
 }
