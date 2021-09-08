@@ -10,29 +10,11 @@ let library = [
     { title: "Walter Isaacson", author: "Steve Jobs", libraryID: 4264 },
     { title: "Mockingjay: The Final Book of The Hunger Games", author: "Suzanne Collins", libraryID: 3245 }
 ];
-
-// /**
-//  * Event handler to display library titles sorted alphabetically
-//  * @returns {undefined}
-//  */
-// function showTitles() {
-
-//     /* put all titles into an array, then sort, then join with newline and insert in textarea innerHTML */
-
-//     const titles = findTitles();
-
-//     /*need to sort and then join the titles still (e.g., someArray.join("\n")  */
-//     titles.sort();
-//     const titleString = titles.join("\n");
-
-//     let textArea = document.getElementById("displayArea");
-//     textArea.innerHTML = console.log(titleString);
-// }
 /**
  * Event handler to display library titles sorted alphabetically
  * @returns {undefined}
  */
- function showTitles() {
+function showTitles() {
 
     /* put all titles into an array, then sort, then join with newline and insert in textarea innerHTML */
 
@@ -45,18 +27,6 @@ let library = [
     let textArea = document.getElementById("displayArea");
     textArea.innerHTML = titleString;
 }
-// /**
-//  * @return {object} array holding all titles as elements
-//  */
-// function findTitles() {
-//     let titles = [];
-//     // titles = ["Mockingjay: The Final Book of The Hunger Games", "The Road Ahead", "Walter Isaacson"];  //FIX THIS!!
-//     for (let i = 0; i < library.length; i++) {
-//         titles[i] = library[i].title.toUpperCase();
-//     }
-//     titles.sort();
-//     return titles;
-// }
 /**
  * @return {object} array holding all titles as elements
  */
@@ -69,29 +39,27 @@ function findTitles() {
     titles.sort();
     return titles;
 }
-
-function addBook(title, author, ID ) {
-       const newBook = {
-            title: title,
-            author: author,
-            libraryID: ID
-        };
-        library.push(newBook);
-        return newBook;
+function addBook(title, author, ID) {
+    const newBook = {
+        title: title,
+        author: author,
+        libraryID: ID
+    };
+    library.push(newBook);
+    return newBook;
 }
 function addBookHtml() {
     const newBook = {
-         title: document.getElementById("title").value,
-         author: document.getElementById("author").value,
-         libraryID: document.getElementById("id").value
-     };
-     library.push(newBook);
-     return newBook;
+        title: document.getElementById("title").value,
+        author: document.getElementById("author").value,
+        libraryID: document.getElementById("id").value
+    };
+    library.push(newBook);
+    return newBook;
 }
 /**
  * @returns {undefined} no return
  */
-
 function showAuthor() {
 
     /* put all titles into an array, then sort, then join with newline and insert in textarea innerHTML */
@@ -99,7 +67,7 @@ function showAuthor() {
     const authors = findAuthors();
     authors.sort();
     /*need to sort and then join the titles still (e.g., someArray.join("\n")  */
- 
+
     const authorsString = authors.join("\n");
 
     let textArea = document.getElementById("displayArea");
@@ -118,7 +86,7 @@ function findAuthors() {
 /**
  * @returns{undefined}
  */
- function showID() {
+function showID() {
 
     /* put all titles into an array, then sort, then join with newline and insert in textarea innerHTML */
 
@@ -149,9 +117,11 @@ function findIDs() {
 * @return {object} array holding all titles as elements
 */
 function scramble() {
-//    const titles = findTitles();
-//    const titleWord = titles.toString().split(" ");
-//    const titleString = titles.join("\n");
-//    let textArea = document.getElementById("displayArea");
-//    textArea.innerHTML = titleString;
+    const titles = findTitles();
+    const titleWord = titles.toString().split(" ");
+    const comb = titleWord.join("\n");
+    comb.sort((a, b) => a.length - b.length);
+    console.log(JSON.stringify(comb, null, 2));
+    let textArea = document.getElementById("displayArea");
+    textArea.innerHTML = comb;
 }
