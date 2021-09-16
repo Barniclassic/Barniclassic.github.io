@@ -49,26 +49,13 @@ function outputListLoop(input){
         return str;
 }
 
-let list = {
-    value: 1,
-    next: {
-      value: 2,
-      next: {
-        value: 3,
-        next: {
-          value: 4,
-          next: null
-        }
-      }
-    }
-  };
 function reverseList(input){
     if(input.next === null){
         return input.value;
     }else 
         return reverseList(input.next) + " " + input.value;
 }
-console.log(reverseList(list));
+
 
 function reverseListLoop(input){
     let str = "";
