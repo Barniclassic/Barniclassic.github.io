@@ -1,4 +1,3 @@
-/* eslint-disable require-jsdoc */
 "use strict";
 
 /* global exports */
@@ -6,6 +5,11 @@
 */
 // module.exports = { sumTo, factorial, fibonacci, outputList, outputListLoop, reverseList, reverseListLoop}; //add all of your function names here that you need for the node mocha tests
 
+/**
+ * 
+ * @param {number} num is any number. 
+ * @returns {number} the total sum of the input.
+ */
 function sumTo(num) {
     if (num === 1) {
         return 1;
@@ -14,6 +18,11 @@ function sumTo(num) {
     }
 }
 
+/**
+ * 
+ * @param {number} num is any number. 
+ * @returns {number} the factorial of the input.
+ */
 function factorial(num) {
     if (num === 1) {
         return 1;
@@ -22,6 +31,11 @@ function factorial(num) {
     }
 }
 
+/**
+ * 
+ * @param {number} num is any number. 
+ * @returns {number} the factorial of the input.
+ */
 function fibonacci(num) {
     if (num === 0){
         return 0;
@@ -32,6 +46,11 @@ function fibonacci(num) {
     }
 }
 
+/**
+ * 
+ * @param {node} input is a node.
+ * @returns{String} the concated value of the node.
+ */
 function outputList(input){
     if(input.next === null){
         return input.value + " printed to console";
@@ -39,6 +58,11 @@ function outputList(input){
         return input.value + " " + outputList(input.next);
 }
 
+/**
+ * 
+ * @param {node} input is a node.
+ * @returns{String} the concated value of the node.
+ */
 function outputListLoop(input){
     let str = "";
     while(input.next !== null){
@@ -49,6 +73,11 @@ function outputListLoop(input){
         return str;
 }
 
+/**
+ * 
+ * @param {node} input is a node.
+ * @returns{String} the reversed concated value of the node.
+ */
 function reverseList(input){
     if(input.next === null){
         return input.value;
@@ -56,7 +85,11 @@ function reverseList(input){
         return reverseList(input.next) + " " + input.value;
 }
 
-
+/**
+ * 
+ * @param {node} input is a node.
+ * @returns{String} the reversed concated value of the node.
+ */
 function reverseListLoop(input){
     let str = "";
     while(input.next !== null){
