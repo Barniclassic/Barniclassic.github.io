@@ -4,7 +4,7 @@
 /* global exports */
 /* You need the module.exports when testing in node.  Comment it out when you send your file to the browser 
 */
-// module.exports = { sumTo, factorial, fibonacci};// outputList, outputListLoop, reverseList, reverseListLoop}; //add all of your function names here that you need for the node mocha tests
+// module.exports = { sumTo, factorial, fibonacci, outputList, outputListLoop, reverseList, reverseListLoop}; //add all of your function names here that you need for the node mocha tests
 
 function sumTo(num) {
     if (num === 1) {
@@ -30,4 +30,52 @@ function fibonacci(num) {
     } else {
         return fibonacci(num - 1) + fibonacci(num - 2);
     }
+}
+
+function outputList(input){
+    if(input.next === null){
+        return input.value + " printed to console";
+    }else 
+        return input.value + " " + outputList(input.next);
+}
+
+function outputListLoop(input){
+    let str = "";
+    while(input.next !== null){
+        str += input.value + " ";
+        input = input.next;
+    } 
+        str += input.value + " printed to console";
+        return str;
+}
+
+let list = {
+    value: 1,
+    next: {
+      value: 2,
+      next: {
+        value: 3,
+        next: {
+          value: 4,
+          next: null
+        }
+      }
+    }
+  };
+function reverseList(input){
+    if(input.next === null){
+        return input.value;
+    }else 
+        return reverseList(input.next) + " " + input.value;
+}
+console.log(reverseList(list));
+
+function reverseListLoop(input){
+    let str = "";
+    while(input.next !== null){
+        str = input.value + " " + str;
+        input = input.next;
+    } 
+        str = input.value + " " + str + "printed to console";
+        return str;
 }
