@@ -37,7 +37,7 @@ describe("Partial application for login", function () {
 
 });
 
-describe("fix function that loses 'this' usinf call", function () {
+describe("fix function that loses 'this' using call", function () {
 
     it("tests rockstar", function () {
         assert.strictEqual(askPassword3(user.loginOk.call(user), user.loginFail.call(user), "rockstar"), "John logged in");
