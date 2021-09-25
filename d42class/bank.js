@@ -51,7 +51,7 @@ class Bank {
       let output = "";
       for (const acc of this._accounts) {
         output = acc.endOfMonth();
-        console.log(result);
+        console.log(output);
       }
       
     }

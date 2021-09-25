@@ -28,7 +28,7 @@ class CheckingAccount extends Account {
             throw new RangeError("Withdraw amount has to be greater than zero");
         }
         if (amount > this._balance + this.overdraft) {
-            throw Error("Insufficient funds");
+            throw Error("Insufficient funds, cannot withdraw beyond overdraft limit");
         }
         this._balance -= amount;
     }
