@@ -50,8 +50,8 @@ class Bank {
     endOfMonth() {
       let output = "";
       for (const acc of this._accounts) {
-        output = acc.endOfMonth();
-        console.log(output);
+        output += acc.endOfMonth()+"\n";
+        return output;
       }
       
     }
