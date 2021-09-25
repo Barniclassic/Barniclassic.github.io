@@ -19,7 +19,14 @@ function topSalary(salaries) {
       return maxSalName;  
 }
 
-
-// function getDateAgo(date, days) {
-
+// function topSalary(salaries) {
+//     let maxSal =0;
+//     let maxSalName = null;
+//     for(const value in salaries) {
+//         if(maxSal < salaries[value]) {
+//             maxSal = salaries[value];
+//             maxSalName = value;
+//         }
+//     }
+//       return maxSal;  
 // }
