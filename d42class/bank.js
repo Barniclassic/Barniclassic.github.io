@@ -44,15 +44,15 @@ class Bank {
       }
     }
     accountReport() {
-      return this._accounts.join("\n");
+      return this._accounts.join("\n").toString()+"\n";
     }
   
     endOfMonth() {
-      let output = "";
+      let output =[];
       for (const acc of this._accounts) {
-        output += acc.endOfMonth()+"\n";
-        return output;
+        output.push(acc.endOfMonth());
       }
+      return output.join("\n").toString();
       
     }
 }
