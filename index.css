@@ -17,7 +17,6 @@
     top: 30%;
     right: 0%;
     flex-direction: row;
-    font-family: 'Times New Roman', serif;
     border: 3% solid transparent;
     background-color: rgba(0, 0, 0, 0.295);
 } 
@@ -45,7 +44,7 @@
     top: 5%;
     left: 15%;
     width: 120%;
-    height: 85%;
+    height: 70%;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -54,32 +53,33 @@
 #name{
     display: block;
     text-align: center;
-    font-size: 350%;
+    font-size: 450%;
     font-style: bolder;
     color: rgb(0, 255, 255);
 }
 
 #headers{
     width:50%;
-    height: 80%;
+    height: 70%;
     display: block;
     position: relative;
     top: 10%;
     left:10%;
     flex-direction: row;
     background-color:rgba(0, 0, 0, 0.479);
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 #skill{
     display: block;
     text-align: center;
-    font-size: 250%;
+    font-size: 350%;
     font-style: bolder;
     color: yellow;
 }
 
 #desciption{
-    font-size: 65%;
+    font-size: 50%;
     color: white;
     font-family: garamond;
 }
