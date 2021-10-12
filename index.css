@@ -1,0 +1,103 @@
+#mainFrame{
+    border: 1px solid;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    background-image:url(./Background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topView{
+    width:100px;
+    display: flex;
+    position: fixed;
+    top: 200px;
+    right: 3px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Times New Roman', serif;
+    border: 3px solid transparent;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+.icons{
+    width: 3em;
+    height: 3em;
+    border: 1px solid transparent;
+    background-color: rgb(231,66,47);
+    border-radius: 50px;
+}
+
+.icons:hover{
+    background-color: yellow;
+}
+
+.topView>a{
+        text-decoration: none !important;
+}
+
+.topView>a{
+    display: inline-block; 
+    padding: 5px;
+    width: 55px;
+    margin: 3px;
+    font-size: 20px;
+    color: white;
+}
+
+#image{
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#headers{
+    width:100%;
+    display: block;
+    position: relative;
+    top: 100px;
+    left:100px;
+    font-size: 45px;
+    font-style: bolder;
+    flex-direction: row;
+    background-color:rgba(0, 0, 0, 0.479);
+}
+
+.intro{
+    width:650px; 
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+    left: 20px;
+    right: 5px;
+    color: rgb(66, 170, 240);
+    font-family: georgia, arial, helvetica;
+    font-style: bolder;
+    border-radius: 10px;
+}
+
+#skill{
+    width:600px;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    font-style: bolder;
+    color: yellow;
+}
+
+#desciption{
+    padding-left: 0px;
+    font-size: 25px;
+    color: white;
+    font-family: garamond;
+}
