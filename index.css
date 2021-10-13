@@ -47,7 +47,7 @@
     top: 10%;
     left: 15%;
     width: 130%;
-    height: 65%;
+    height: 75%;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -67,7 +67,7 @@
 
 .col-sm-7{
     width:40%;
-    height: 65%;
+    height: 75%;
     display: block;
     position: relative;
     top: 10%;
