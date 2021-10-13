@@ -43,25 +43,30 @@
     position: relative;
     top: 10%;
     left: 15%;
-    width: 120%;
-    height: 70%;
+    width: 130%;
+    height: 75%;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
 }
 
-#name{
+.col-lg-8{
     height: 100%;
     display: block;
-    text-align: center;
+    position: relative;
+    left: 3%;
+    padding-top: 1%;
     font-size: 450%;
     font-style: bolder;
     color: rgb(0, 255, 255);
+    text-align: left;
+    border-left: 2px solid white;
+    border-radius: 10%;
 }
 
-#headers{
-    width:60%;
-    height: 70%;
+.col-sm-7{
+    width:40%;
+    height: 75%;
     display: block;
     position: relative;
     top: 10%;
@@ -69,15 +74,21 @@
     flex-direction: row;
     background-color:rgba(0, 0, 0, 0.678);
     font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5%;
+    text-align: center;
 }
 
-#im{
-    display: inline-block;
+.col-lg-4{
+    width: 200%;
+    /* height: 1000%; */
+    padding-top: 2%;
     position: relative;
     font-size: 1000%;
-    flex-direction: column;
+    font-style: bolder;
     color: white;
-    height: 100%;
+    text-align: right;
+    font-stretch:condensed;
+    margin-top: 2%;
 }
 
 #skill{
@@ -85,7 +96,6 @@
     font-size: 350%;
     font-style: bolder;
     color: yellow;
-    text-align: center;
 }
 
 #desciption{
