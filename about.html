@@ -1,57 +1,65 @@
-<!DOCTYPE html>
-<!-- Template by quackit.com -->
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>2 Rows, 2 Columns, A</title>
-		<link rel="stylesheet" href="./about.css">
-
-	</head>
-	
-	<body>		
-
-		<header id="header">
-			<div id="logo">
-				<h1>About Me</h1>
-			</div>
-		</header>
-				
-		<main>
-			<div class="innertube">
-				
-				<h1>Heading</h1>
-				<p><script>generateText(300)</script></p>
-				
-			</div>
-		</main>
-
-		<nav id="nav">
-			<div class="innertube">
-				<h1>Heading</h1>
-				<ul>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
-					<li><a href="#">Link 5</a></li>
-				</ul>
-				<h1>Heading</h1>
-				<ul>
-					<!-- <li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
-					<li><a href="#">Link 5</a></li> -->
-				</ul>
-				<h1>Heading</h1>
-				<ul>
-					<!-- <li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
-					<li><a href="#">Link 5</a></li> -->
-				</ul>
-			</div>
-		</nav>	
-	</body>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="./about.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <div class="container-fluid bg-dark">
+		<span class="header">About<span class="text-warning">Me</span></span>
+        <div class="row ">
+            <div class="col-sm pt-5 text-white">
+					<h2 class="mt-1"><b>Personal <span class="text-warning">Information</span></b></h2>
+					<div class="row">
+						<div class="col-md">
+							<div>First Name: <b class="text-warning">Barnabas T.</b></div><br>
+							<div>Last Name: <b class="text-warning">Berhanu</b></div><br>
+							<div>Age: <b class="text-warning">28</b></div><br>
+							<div>Nationality: <b class="text-warning">Ethiopian</b></div><br>
+						</div>
+						<div class="col-md">
+							<div>Phone: <b class="text-warning">+1 (202) 839 6767</b></div><br>
+							<div>Email: <b class="text-warning">barniclassic@gmail.com</b></div><br>
+							<div>Address: <b class="text-warning">Washington DC.</b></div><br>
+							<div>Languages: <b class="text-warning">English, </b><b class="text-warning">Amharic</b></div><br>
+						</div>                    
+                	</div>
+            </div>
+            <div class="col-sm pt-5 text-white">
+				<h2 class="mt-1">The <b class="text-warning">Journey</b></h2>
+				<div class="row">
+					<div class="col-lg">
+						<span class="text-warning" id="front">3</span><span id="exp"> --Years of Experience--</span>
+					</div>
+					<div class="col-lg">
+						<span class="text-warning" id="front">4</span><span id="exp">--Project Complitions--</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg">
+						<span class="text-warning" id="front">3</span><span id="exp">--Programming Languages--</span>
+					</div>
+					<div class="col-lg">
+						<span class="text-warning" id="front">2</span><span id="exp">--Operating Systems--</span>
+					</div>
+				</div>
+            </div>
+        </div>
+        
+        <footer id="footer">
+            <hr id="line-break">
+            <a href="home.html" style="text-decoration:none; color: white;" class="pl-3">Home</a>
+        	<a href="about.html" style="text-decoration:none; color: white;" class="pl-3">AboutMe</a>
+		    <a href="courses.html" style="text-decoration:none; color: white;" class="pl-3">Courses</a>    
+            <a href="projects.html" style="text-decoration:none; color: white;" class="pl-3">Projects</a>
+            <a href="contacts.html" style="text-decoration:none; color: white;" class="pl-3">ContactMe</a>	
+        </footer>
+          
+    </div>
+</body>
 </html>
