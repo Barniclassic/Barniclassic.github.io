@@ -1,7 +1,6 @@
 .container-fluid{
     display: grid;
     position: relative;
-    /* width: 100%; */
     height: 100%;
     font-family: garamond;
 }
@@ -24,18 +23,14 @@
 }
 
 .col-sm{
-    border-left: 2px solid white;
-    border-right: 2px solid white;
+    border-top: 2px solid white;
+    border-top: 2px solid white;
+    border-radius: 10%;
 }
 .address{
     width: 10%;
     border-radius: 20%;
     background-color: rgb(235, 136, 8);
-}
-
-.twitter{
-    background-color: white;
-    border-radius: 100%;
 }
 
 #footer {
