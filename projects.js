@@ -1,11 +1,11 @@
-let projects = [
-  {projectID: 'CS-203', projectName: 'Library Project', projectDate: '5/16/2021', difficulty:`6`, link: `./project1.html`},
-  {projectID: 'CS-203', projectName: 'Payroll Management System', projectDate: '5/10/2021', difficulty:`7`, link: `./project2.html`},
-  {projectID: 'CS-315', projectName: 'Mini Projects', projectDate: '10/5/2021', difficulty:`4`, link: `./project3.html`},
-  {projectID: 'CS-315', projectName: 'Movie Page', projectDate: '10/12/2021', difficulty:`6`, link: `./project4.html`}
-  ]
+// let projects = [
+//   {projectID: 'CS-203', projectName: 'Library Project', projectDate: '5/16/2021', difficulty:`6`, link: `./project1.html`},
+//   {projectID: 'CS-203', projectName: 'Payroll Management System', projectDate: '5/10/2021', difficulty:`7`, link: `./project2.html`},
+//   {projectID: 'CS-315', projectName: 'Mini Projects', projectDate: '10/5/2021', difficulty:`4`, link: `./project3.html`},
+//   {projectID: 'CS-315', projectName: 'Movie Page', projectDate: '10/12/2021', difficulty:`6`, link: `./project4.html`}
+//   ]
 
-localStorage.setItem("myProjects", JSON.stringify(projects));
+// localStorage.setItem("myProjects", JSON.stringify(projects));
 window.onload = function(){
   let project = localStorage.getItem('myProjects');
   let parsedProject = JSON.parse(project);
