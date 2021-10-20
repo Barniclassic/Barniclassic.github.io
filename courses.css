@@ -78,13 +78,13 @@ html, body {
 }
 
 #footer {
-    bottom : 0;
+    /* bottom : 0; */
     height:20%;
-    margin-top : 5%;
+    margin-top : 2%;
     position: relative;
-    left: 2%;
+    left: 1%;
     text-align: left;
-    font-size: 25px;
+    font-size: 20px;
     font-family: garamond;
 }
 
@@ -122,4 +122,9 @@ html, body {
 
 .sorters{
     margin-left: 5%;
+}
+
+.pl-3{
+    padding-left: 1%;
+    color: rgb(0, 255, 242)
 }

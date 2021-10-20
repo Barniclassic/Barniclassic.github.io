@@ -55,11 +55,11 @@ html, body {
 #footer {
     bottom : 0;
     height:20%;
-    margin-top : 5%;
+    margin-top : 2%;
     position: relative;
-    left: 2%;
+    left: 1%;
     text-align: left;
-    font-size: 25px;
+    font-size: 20px;
     font-family: garamond;
 }
 
@@ -104,11 +104,15 @@ h1{
 
 button:hover {
     opacity: 0.8;
-  }
-  
- 
-  .imgcontainer {
+}
+
+.imgcontainer {
     font-size: 250px;
     border-radius: 100px;
     text-align: center;
-  }
+}
+
+.pl-3{
+    padding-left: 1%;
+    color: rgb(0, 255, 242)
+}
