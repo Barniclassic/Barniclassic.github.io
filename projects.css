@@ -7,8 +7,8 @@ html, body {
 .container-fluid{
     display: grid;
     position: relative;
+    height: 100%;
     font-family: garamond;
-    
 }
 
 .topView{
@@ -115,11 +115,6 @@ html, body {
 #last{
     font-size: 150%; 
 }
-
 .text-right{
     text-align: center;
-}
-
-.sorters{
-    margin-left: 5%;
 }

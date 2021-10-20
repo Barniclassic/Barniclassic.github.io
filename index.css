@@ -1,56 +1,25 @@
 #mainFrame{
-    border: 1px solid;
+    border: 1px solid ;
     width: 100%;
     height: 100%;
     position: absolute;
+    margin:0;
     background-color: rgb(0, 0, 0);
     background-image:url(./Background.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: auto;
 }
 
-.col-sm-1{
-    text-align: right;
-    border-radius: 15%;
-    padding-right: 1%;
-    position: fixed;
-    top: 30%;
-    right: 0%;
-    flex-direction: row;
-    border: 3% solid transparent;
-    background-color: rgba(0, 0, 0, 0.295);
-} 
-
-.icons{
-    width: 50%;
-    height: 20%;
-    margin-top: 10%;
-    position: relative;
-    padding-right: 0%;
-    border: 1px solid transparent;
-    background-color: rgb(231,66,47);
-    border-radius: 55%;
-}
-
-.icons:hover{
-    background-color: yellow;
-}
-
-.topView>a{
-        text-decoration: none !important;
-}
-
-#image{
-    display: inline-block;
-    position: relative;
-    top: 10%;
-    left: 15%;
+.col-md-3 {
     width: 130%;
-    height: 75%;
+    display: inside;
+    position: absolute;
+    top: 10%;
+    left: 2%;
     border-radius: 20px;
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color:rgba(0, 0, 0, 0.678);
 }
 
@@ -65,14 +34,12 @@
     margin-top: 5%;
 }
 
-.col-sm-7{
-    width:40%;
-    height: 75%;
-    display: block;
-    position: relative;
+.col-md-8{
+    display: inline-block;
+    position: absolute;
     top: 10%;
-    left:10%;
-    flex-direction: row;
+    right:20%;
+    left: 30%;
     background-color:rgba(0, 0, 0, 0.678);
     font-family:Georgia, 'Times New Roman', Times, serif;
     border-radius: 5%;
@@ -80,7 +47,6 @@
 }
 
 .col-lg-4{
-    width: 200%;
     padding-top: 2%;
     position: relative;
     font-size: 1000%;
@@ -103,4 +69,10 @@
     font-size: 150%;
     color: white;
     font-family: garamond;
+}
+
+@media only screen and (max-width: 1000px) {
+    body{
+        background-color: black !important;
+    }
 }

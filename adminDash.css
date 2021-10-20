@@ -8,7 +8,6 @@ html, body {
     display: grid;
     position: relative;
     font-family: garamond;
-    
 }
 
 .topView{
@@ -64,12 +63,18 @@ html, body {
     left: 3%;
     right: 1%;
     font-size: 100%;
+    
+}
+#mainRow{
+    border: 1px solid white;
+    border-radius: 5%;
 }
 
-.col-sm{
-    border-left: 10px solid yellow;
-    border-right: 10px solid yellow;
-    border-radius: 20%;
+.col-sm-4, .col-sm-5{
+    border-left: 5px solid yellow;
+    border-right: 5px solid yellow;
+    border-radius: 15%;
+    /* margin-top: 5%; */
 }
 .address{
     width: 10%;
@@ -92,34 +97,14 @@ html, body {
     color: white;
 }
 
-.col-lg{
+.col-md-6{
     border: 1px solid rgba(255, 255, 255, 0.116);
     border-radius: 15%;
     display: inline-block;
     position: relative;
     margin-left: 5%;
-    margin-top: 5%;
-    font-size: 12vh;
-    width: 80%;
+    margin-top: 1%;
+    font-size: 12px;
+    width: 50%;
 }
 
-#front{
-    font-size: 150%; 
-    text-align: left;
-}
-
-.col-md-12{
-    text-align: center;
-}
-
-#last{
-    font-size: 150%; 
-}
-
-.text-right{
-    text-align: center;
-}
-
-.sorters{
-    margin-left: 5%;
-}

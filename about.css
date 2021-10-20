@@ -1,9 +1,51 @@
+body{
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
 .container-fluid{
     display: grid;
-    position: relative;
-    height: 100%;
+    position: auto;
     font-family: garamond;
 }
+
+.topView{
+    width:80px;
+    display: flex;
+    margin: auto;
+    position: fixed;
+    top: 25%;
+    right: 3px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Times New Roman', serif;
+    border: 3px solid transparent;
+    background-color: rgba(0, 0, 0, 0.295);
+    border-radius: 15%;
+    text-align: center;
+}
+
+.icons{
+    width: 3em;
+    height: 3em;
+    border: 1px solid transparent;
+    background-color: rgb(231,66,47);
+    border-radius: 50px;
+}
+
+.icons:hover{
+    background-color: yellow;
+}
+
+.topView>a{
+    display: inline-block; 
+    padding: 5px;
+    width: 55px;
+    margin: 3px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none !important;
+}
+
 
 .header{
     font-family: garamond;
@@ -15,18 +57,33 @@
 }
 .row{
     width: 95%;
-    position: relative;
-    top: 1%;
-    left: 3%;
-    right: 1%;
-    font-size: 100%;
+    font-size: 50px;
+    border-top: 2px solid white;
 }
 
-.col-sm{
-    border-top: 2px solid white;
-    border-top: 2px solid white;
-    border-radius: 10%;
+#col1{
+     border-top: 2px solid yellow;
+     border-radius: 10%;
+     /* margin-left: 1%; */
+     padding-top:  5%;
+     padding-left: 3%;
+     
 }
+
+#col2{
+    border-top: 2px solid yellow;
+    border-radius: 10%;
+    padding-top:  5%;
+    padding-left: 5%;
+}
+
+#col3{
+    border-top: 2px solid yellow;
+    border-radius: 10%;
+    padding-top:  2%;
+    text-align: center;
+}
+
 .address{
     width: 10%;
     border-radius: 20%;
@@ -48,28 +105,6 @@
     color: white;
 }
 
-.col-lg{
-    border: 1px solid rgba(255, 255, 255, 0.116);
-    border-radius: 15%;
-    display: inline-block;
-    position: relative;
-    margin-left: 5%;
-    margin-top: 5%;
-    font-size: 12vh;
-    width: 80%;
-}
-
-#front{
-    font-size: 100%; 
-    text-align: left;
-}
-
-#exp{
-    position: absolute;
-    right: 1%;
-    text-align: right;
-    font-size: 25%;
-}
 
 h1{
     font-size: 100%;
