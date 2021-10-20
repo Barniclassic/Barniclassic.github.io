@@ -1,36 +1,36 @@
-let spring =[
-  {CourseID: 'CS-105', CourseName: 'Introduction to Java', courseDate: '2/22/2021', Discreption:`An introduction to the fundamentals of computer programming through media computation. Students will
-  learn to write interactive graphical programs. Fundamental language concepts such as variables,
-  conditionals, loops, functions, and arrays.`, Link:'https://www.w3schools.com/java/java_intro.asp'}, 
+// let spring =[
+//   {CourseID: 'CS-105', CourseName: 'Introduction to Java', courseDate: '2/22/2021', Discreption:`An introduction to the fundamentals of computer programming through media computation. Students will
+//   learn to write interactive graphical programs. Fundamental language concepts such as variables,
+//   conditionals, loops, functions, and arrays.`, Link:'https://www.w3schools.com/java/java_intro.asp'}, 
 
-  {CourseID: 'CS-201', CourseName: 'Procedural Programming', courseDate: '3/22/2021', Discreption:`To introduce the fundamental concepts related to computer science; aiming to prepare students with the 
-  skills to create basic algorithms that solve specific problems.`, Link:'https://www.w3schools.com/Java/default.asp'},
+//   {CourseID: 'CS-201', CourseName: 'Procedural Programming', courseDate: '3/22/2021', Discreption:`To introduce the fundamental concepts related to computer science; aiming to prepare students with the 
+//   skills to create basic algorithms that solve specific problems.`, Link:'https://www.w3schools.com/Java/default.asp'},
   
-  {CourseID: 'CS-203', CourseName: 'Object Oriented Programming in Java', courseDate: '4/19/2021', Discreption:`This course covers programming in Java, specifically focusing on object-oriented concepts and
-  creating GUI applications. It include classes and objects, inheritance and polymorphism, interfaces and abstract classes, and exception handling.`, Link:'https://www.w3schools.com/java/java_oop.asp'},
+//   {CourseID: 'CS-203', CourseName: 'Object Oriented Programming in Java', courseDate: '4/19/2021', Discreption:`This course covers programming in Java, specifically focusing on object-oriented concepts and
+//   creating GUI applications. It include classes and objects, inheritance and polymorphism, interfaces and abstract classes, and exception handling.`, Link:'https://www.w3schools.com/java/java_oop.asp'},
 
-  {CourseID: 'CS-221', CourseName: 'Data Structures', courseDate: '5/17/2021', Discreption:`Students use computer programming laboratory problems to apply the principles of data
-  structure organization in a practical environment and develop advanced programming skills.`, Link:'https://www.geeksforgeeks.org/data-structures/'},
+//   {CourseID: 'CS-221', CourseName: 'Data Structures', courseDate: '5/17/2021', Discreption:`Students use computer programming laboratory problems to apply the principles of data
+//   structure organization in a practical environment and develop advanced programming skills.`, Link:'https://www.geeksforgeeks.org/data-structures/'},
 
-  {CourseID: 'CS-272', CourseName: 'Discrete Mathematics', courseDate: '6/21/2021', Discreption:`Discrete mathematics provides the mathematical foundations for many computer science courses including data structures, 
-  algorithms, database theory, automata theory, formal languages, compiler theory, computer security, and operating systems.`, Link:'https://www.coursera.org/specializations/discrete-mathematicsDiscrete'},
-]
-let fall = [
-  {CourseID: 'CS-305', CourseName: 'Object Oriented Programming in JavaScript', courseDate: '8/30/2021', Discreption:`In this course, you will gain proficiency in using JavaScript as a functional programming language. 
-    You will learn object-oriented programming principles and the nature of JavaScript’s loosely typed programs and dynamic object model.`, Link:'https://www.w3schools.com/js/js_objects.asp'},
+//   {CourseID: 'CS-272', CourseName: 'Discrete Mathematics', courseDate: '6/21/2021', Discreption:`Discrete mathematics provides the mathematical foundations for many computer science courses including data structures, 
+//   algorithms, database theory, automata theory, formal languages, compiler theory, computer security, and operating systems.`, Link:'https://www.coursera.org/specializations/discrete-mathematicsDiscrete'},
+// ]
+// let fall = [
+//   {CourseID: 'CS-305', CourseName: 'Object Oriented Programming in JavaScript', courseDate: '8/30/2021', Discreption:`In this course, you will gain proficiency in using JavaScript as a functional programming language. 
+//     You will learn object-oriented programming principles and the nature of JavaScript’s loosely typed programs and dynamic object model.`, Link:'https://www.w3schools.com/js/js_objects.asp'},
 
-  {CourseID: 'CS-315', CourseName: 'Web Application Programming in JavaScript', courseDate: '9/27/2021', Discreption:`This course will teach you all the fundamentals of creating web applications, from using 
-  HTML to make a web page, to styling your content, to making your pages interactive.`, Link:'https://www.w3schools.com/html/html_attributes.asp'},
+//   {CourseID: 'CS-315', CourseName: 'Web Application Programming in JavaScript', courseDate: '9/27/2021', Discreption:`This course will teach you all the fundamentals of creating web applications, from using 
+//   HTML to make a web page, to styling your content, to making your pages interactive.`, Link:'https://www.w3schools.com/html/html_attributes.asp'},
 
-  {CourseID: 'CS-445', CourseName: 'Modern Asynchronous Programming', courseDate: '10/25/2021', Discreption:`In this course you’ll learn techniques for managing your async code. Features like ES2021 Promise.any() allow you to 
-  safeguard your async code from external issues that are out of your control like server downtime.`, Link:'https://pragprog.com/titles/fkajs/modern-asynchronous-javascript/'},
+//   {CourseID: 'CS-445', CourseName: 'Modern Asynchronous Programming', courseDate: '10/25/2021', Discreption:`In this course you’ll learn techniques for managing your async code. Features like ES2021 Promise.any() allow you to 
+//   safeguard your async code from external issues that are out of your control like server downtime.`, Link:'https://pragprog.com/titles/fkajs/modern-asynchronous-javascript/'},
 
-  {CourseID: 'CS-415', CourseName: 'Relational and Document-Based Databases', courseDate: '11/22/2021', Discreption:` To introduce the fundamental concepts related to computer science; aiming to prepare students with the 
-  skills to create basic algorithms that solve specific problems.`, Link:'https://www.coursera.org/lecture/nosql-databases/mongo-db-zdWwX'},
-]
+//   {CourseID: 'CS-415', CourseName: 'Relational and Document-Based Databases', courseDate: '11/22/2021', Discreption:` To introduce the fundamental concepts related to computer science; aiming to prepare students with the 
+//   skills to create basic algorithms that solve specific problems.`, Link:'https://www.coursera.org/lecture/nosql-databases/mongo-db-zdWwX'},
+// ]
 
-let courses = [spring, fall];  
-localStorage.setItem("myCourses", JSON.stringify(courses));
+// let courses = [spring, fall];  
+// localStorage.setItem("myCourses", JSON.stringify(courses));
 
 
 window.onload = function(){
