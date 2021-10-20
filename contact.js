@@ -1,8 +1,8 @@
 window.onload = function() {
-    // let message = [{email: "barniclassic@gmail.com", fName: "Barnabas", lName: "Berhanu", gender: "male",comment: "Hello it's me."},
-    //                 {email: "barniclassic@miu.edu", fName: "Barnabas", lName: "Berhanu", gender: "male",comment: "Hello! Hello! it's me again."}]
+    let message = [{email: "barniclassic@gmail.com", fName: "Barnabas", lName: "Berhanu", gender: "male",comment: "Hello it's me."},
+                    {email: "barniclassic@miu.edu", fName: "Barnabas", lName: "Berhanu", gender: "male",comment: "Hello! Hello! it's me again."}]
 
-    // localStorage.setItem("messages", JSON.stringify(message));
+    localStorage.setItem("messages", JSON.stringify(message));
     let messages = localStorage.getItem('messages');
     let myMessage = JSON.parse(messages);
     document.getElementById("contactMe").addEventListener("click", function(){
