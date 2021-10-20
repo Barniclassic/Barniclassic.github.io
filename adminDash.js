@@ -20,7 +20,16 @@ window.onload = function() {
         let discreption = document.getElementById("discreption").value;
         let semester = document.getElementById("semester").value;
         let link = document.getElementById("clink").value;
-    
+        if(courseId == "" || courseName == "" || courseDate == "" || discreption == "" || link == ""){
+            alert("Please enter a correct input!");
+            document.getElementById("courseId").style.backgroundColor = "yellow";
+            document.getElementById("courseName").style.backgroundColor = "yellow";
+            document.getElementById("courseDate").style.backgroundColor = "yellow";
+            document.getElementById("discreption").style.backgroundColor = "yellow";
+            document.getElementById("semester").style.backgroundColor = "yellow";
+            document.getElementById("clink").style.backgroundColor = "yellow";
+            return;
+        }
         
         if(semester.toLowerCase() === "spring"){
             let obj = {
@@ -83,7 +92,15 @@ window.onload = function() {
         let projectDate = document.getElementById("projectDate").value;
         let difficulty = document.getElementById("difficulty").value;
         let plink = document.getElementById("plink").value;
-    
+        if(projectId == "" || projectName == "" || projectDate == "" || difficulty == "" || plink == ""){
+            alert("Please enter a correct input!");
+            document.getElementById("projectId").style.backgroundColor = "yellow";
+            document.getElementById("projectName").style.backgroundColor = "yellow";
+            document.getElementById("projectDate").style.backgroundColor = "yellow";
+            document.getElementById("difficulty").style.backgroundColor = "yellow";
+            document.getElementById("plink").style.backgroundColor = "yellow";
+            return;
+        }
         let obj = {
             projectID: `${projectId}`, 
             projectDate: `${projectName}`, 
@@ -112,9 +129,9 @@ function deleteCourse(btn) {
     var row = btn.parentNode.parentNode;
     let course = localStorage.getItem('myCourses');
     let parsedCourse = JSON.parse(course);
-    for(let i=0; i<parsedProject.length; i++){
-            if(parsedProject[i].projectID === row.childNodes[0].innerHTML){
-                parsedProject.splice(i, 1);
+    for(let i=0; i<parsedCourse.length; i++){
+            if(parsedCourse[i].CourseID === row.childNodes[0].innerHTML){
+                parsedCourse.splice(i, 1);
                     break;
             }
     }
