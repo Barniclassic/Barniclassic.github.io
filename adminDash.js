@@ -77,6 +77,35 @@ window.onload = function() {
             document.getElementById("clink").value = "";
         }
     });
+
+    document.getElementById("myEdit1").addEventListener("click", function(){
+        let courseId = document.getElementById("courseId").value;
+        for(let i=0;i<parsedCourse.length;i++){
+            for(let j=0; j<parsedCourse[i].length; j++){
+                if(parsedCourse[i][j].CourseID == courseId){
+                    document.getElementById("courseId").value = parsedCourse[i][j].CourseID;
+                    document.getElementById("courseName").value = parsedCourse[i][j].CourseName;
+                    document.getElementById("courseDate").value = parsedCourse[i][j].courseDate;
+                    document.getElementById("discreption").value = parsedCourse[i][j].Discreption;
+                    document.getElementById("semester").value = "";
+                    document.getElementById("clink").value = parsedCourse[i][j].Link;
+        
+
+                    document.getElementById("myUpdate1").addEventListener("click",()=>{
+
+                        parsedCourse[i][j].CourseID = document.getElementById("courseId").value;
+                        parsedCourse[i][j].CourseName = document.getElementById("courseName").value;
+                        parsedCourse[i][j].courseDate =  document.getElementById("courseDate").value;
+                        parsedCourse[i][j].Discreption = document.getElementById("discreption").value;
+                        parsedCourse[i][j].Link = document.getElementById("clink").value;
+                        localStorage.setItem("myCourses",JSON.stringify(parsedCourse));
+
+                        window.onload();
+                    });
+                }
+            }
+        }
+    });
      
     let project = localStorage.getItem('myProjects');
         let parsedProject = JSON.parse(project);
@@ -117,6 +146,31 @@ window.onload = function() {
             document.getElementById("plink").value = "";
     });
 
+    document.getElementById("myEdit2").addEventListener("click", function(){
+        let projectId = document.getElementById("projectId").value;
+            for(const element of parsedProject){
+                if(element.projectID == projectId){
+                    document.getElementById("projectId").value = element.projectID;
+                    document.getElementById("projectName").value = element.projectName;
+                    document.getElementById("projectDate").value = element.projectDate;
+                    document.getElementById("difficulty").value = element.difficulty;
+                    document.getElementById("plink").value = element.link;
+        
+
+                    document.getElementById("myUpdate2").addEventListener("click",()=>{
+
+                        element.projectID = document.getElementById("projectId").value;
+                        element.projectName = document.getElementById("projectName").value
+                        element.projectDate =  document.getElementById("projectDate").value;
+                        element.difficulty = document.getElementById("difficulty").value;
+                        element.link = document.getElementById("plink").value;
+                        localStorage.setItem("myProjects",JSON.stringify(parsedProject));
+
+                        window.onload();
+                    });
+                }
+            }
+    });
     let messages = localStorage.getItem('messages');
     let myMessage = JSON.parse(messages);
     for(const element of myMessage){
@@ -129,11 +183,17 @@ function deleteCourse(btn) {
     var row = btn.parentNode.parentNode;
     let course = localStorage.getItem('myCourses');
     let parsedCourse = JSON.parse(course);
+    // console.log(parsedCourse);
     for(let i=0; i<parsedCourse.length; i++){
-            if(parsedCourse[i].CourseID === row.childNodes[0].innerHTML){
-                parsedCourse.splice(i, 1);
+        // console.log(parsedCourse[i]);
+        for(let j=0; j<parsedCourse[i].length; j++){
+            // console.log(parsedCourse[i][j]);
+            if(parsedCourse[i][j].CourseID === row.childNodes[0].innerHTML){
+                parsedCourse[i].splice(j, 1);
+                // console.log(parsedCourse[i][j]);
                     break;
             }
+        }
     }
     row.remove();
     localStorage.setItem('myCourses', JSON.stringify(parsedCourse));
@@ -159,11 +219,8 @@ function deleteMessage(btn){
     console.log(row.childNodes[0].innerHTML)
     let message = localStorage.getItem('messages');
     let parsedMessage = JSON.parse(message);
-    // console.log(parsedMessage)
     for(let i=0; i<parsedMessage.length; i++){
-        // console.log(parsedProject[i])
         if(parsedMessage[i].email === row.childNodes[0].innerHTML){
-            // console.log(parsedProject[i].projectID)
             parsedMessage.splice(i, 1);
             break;
         }
