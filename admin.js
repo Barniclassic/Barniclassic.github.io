@@ -5,7 +5,7 @@ window.onload = function () {
     let password = document.getElementById("pwd1");
     if (email.value === "barniclassic@gmail.com" && password.value === "Hello123") {
       alert("Login successfully");
-      window.location.href = "http://127.0.0.1:5501/WAPproject/adminDash.html";
+      window.location.href = "./adminDash.html";
     }else {
         alert("Your email and password combination is incorrect");
         warning.style.visibility = "visible"; 
